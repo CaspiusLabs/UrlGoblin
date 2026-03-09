@@ -1,4 +1,5 @@
 ##UrlGoblin — Feature Summary
+
 **Core Functionality**
 •	Automatic clipboard URL capture — monitors the system clipboard and captures any URLs (http, https, ftp, mailto, www) automatically
 •	Duplicate detection — prevents the same URL from being added twice across all groups
@@ -82,4 +83,5 @@
 •	In-memory dialog templates — all dialogs (Options, Input, Tags Picker) built programmatically without UrlGoblin.rc resources (except About)
 •	GDI+ for favicon PNGs — IStream → Bitmap → hIcon pipeline
 •	WinInet for HTTP — favicon and title downloads with 2-second timeouts
+
 •	ComCtl32 v6 manifest — visual styles enabled via linker pragma
