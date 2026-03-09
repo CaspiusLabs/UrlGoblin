@@ -1,20 +1,3 @@
-UrlGoblin — Feature Summary.
-
-Technical Details
-•	Pure Win32/C++20 — no MFC, no .NET, no external UI frameworks
-•	In-memory dialog templates — all dialogs (Options, Input, Tags Picker) built programmatically without UrlGoblin.rc resources (except About)
-•	GDI+ for favicon PNGs — IStream → Bitmap → hIcon pipeline
-•	WinInet for HTTP — favicon and title downloads with 2-second timeouts
-•	ComCtl32 v6 manifest — visual styles enabled via linker pragma
-
-Version & Build System
-•	VERSIONINFO resource — 4-part version (MAJOR.MINOR.PATCH.BUILD) embedded in the executable
-•	Auto-increment build number — increment_build.ps1 runs as a Pre-Build Event on Release builds, updates Resource.h
-•	version.json generation — generate_version_json.ps1 runs as a Post-Build Event, outputs a JSON file with version, download URL, and changelog
-•	Single source of truth — all version strings (APP_VERSION, APP_VERSION_W, APP_NAME_VERSION) auto-updated from numeric defines
-
-
-
 UrlGoblin — Changelog.
 
 From 1.2.0 - Check for Updates:
@@ -89,3 +72,4 @@ From 1.1.1 - Core Functionality:
 •	Favicon fetching — downloads 16×16 favicons via Google favicon service and displays them in the list.
 •	SQLite persistence — all data are stored in a local Db file.
 •	Settings preferences saved in a INI file.
+
