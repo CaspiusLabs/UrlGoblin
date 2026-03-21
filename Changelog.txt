@@ -1,4 +1,43 @@
-UrlGoblin — Changelog.
+UrlGoblin — Changelog
+
+From 1.2.7 - Import Export:
+•	Added CSV export with selectable columns. Selection stored in the INI.
+•	Added JSON Export and Import in the File Menu.
+•	JSON Export now writes: URLs, titles, groups, tags, auto-tag and auto-group rules.
+•	JSON Import now supports: Merge with existing data, Replace all existing data.
+
+From 1.2.6 - Auto Group and Multiselect:
+•	Added Auto Group Rules system for automatic URL grouping based on URL substring matching.
+•	Added multi-select support in the URL grid.
+•	Added bulk URL operations for selected rows: delete, validate, open, copy, move, shortcut, edit, tags, title, group
+
+From 1.2.5 - UI Changes:
+•	Replaced the previous ListView URL with a custom owner-drawn UrlGrid.
+•	Added grouped URL rendering with custom headers, sorting, scrolling, selection, drag/drop, and column handling in the new grid.
+•	Fixed Main Menu and Grid scrollbars not following Dark Mode.
+•	Added small visual enhancers like drag'n'drop cursors and hover bars.
+
+From 1.2.4 - Autotag and Async Loading:
+• 	Added auto tagging system. Add a rule with pattern github.com and tag dev — any captured URL containing github.com will automatically receive the dev tag.
+•	Added Async URL Loading. Speeds up startup.
+
+From 1.2.3 - Columns and URLs Drag-and-Drop:
+•	Added column with ID and enabled dragging URLs to change their position. Order is saved in the INI file and restored on startup.
+•	Columns can be reordered by dragging headers on the ListView.
+•	Dark Mode dialog box fixes.
+
+From 1.2.2 - Desktop Shortcut and Performance:
+•	Added Create Desktop Shortcut (right-click context menu and URLs → Create Desktop Shortcut) — writes a standard `.url` file to the Desktop using the page title as the filename.
+•	Favicons are now cached as PNG BLOBs in the SQLite database (favicons table). Speeds up startup.
+•	LisView column widths and repaint now happen exactly once after all URLs are loaded. Speeds up startup.
+
+From 1.2.1 - URL Validation:
+•	Added Validate URL (right-click context menu) — performs an HTTP request for the selected URL and reports the status (e.g. `✔ 200 OK`, `✘ 404 Not Found`, `✘ Unreachable`).
+•	Added Validate All (URLs → Validate All...) — validates every URL in the list sequentially, updating the Valid column in real time.
+•	Added Validate Group URLs (URLs → Validate Group URLs... and right-click context menu) — validates only the URLs belonging to the same group as the currently selected item.
+•	Added Validate URL on capture (Options → Validate URL on capture) — when enabled, every newly clipboard-captured URL is silently validated and the Valid column is updated immediately; off by default; persisted as `ValidateOnCapture` in the INI file.
+•	Added Valid column — new ListView column showing per-URL validation status; colour-coded green `✔` for reachable (2xx/3xx), red `✘` for errors; column width is persisted in settings.
+•	Added Delete Invalid URLs (URLs → Delete Invalid URLs...) — removes all invalid marked URLs after confirmation; enabled as soon as any URL has been validated (single or bulk).
 
 From 1.2.0 - Check for Updates:
 •	Added Check for Updates on Startup option.
