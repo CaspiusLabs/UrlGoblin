@@ -3,8 +3,8 @@ UrlGoblin — Changelog
 From 1.3.1 - Bookmark Import/Export:
 •	Added Chromium Bookmark Import. Auto-detects installed Chromium-based browsers: Google Chrome, Microsoft Edge, Brave, Opera, Vivaldi, Opera GX.
 •	Added Firefox Bookmark Import. Opens a file picker for the user to select their exported bookmarks.html file.
-•	Added Export Selected as Bookmarks HTML — exports the currently selected URLs.
-•	Added Export Group as Bookmarks HTML — exports all URLs in a group.
+•	Added Export Selected as Bookmarks HTML, exports the currently selected URLs.
+•	Added Export Group as Bookmarks HTML, exports all URLs in a group.
 
 From 1.3.0 - Status Bar:
 •	Added URL usage tracking columns. Open Count, displays how many times each URL has been opened. Last Opened, displays the timestamp of when the URL was last opened.
