@@ -1,5 +1,29 @@
 UrlGoblin — Changelog
 
+From 1.3.1 - Bookmark Import/Export:
+•	Added Chromium Bookmark Import. Auto-detects installed Chromium-based browsers: Google Chrome, Microsoft Edge, Brave, Opera, Vivaldi, Opera GX.
+•	Added Firefox Bookmark Import. Opens a file picker for the user to select their exported bookmarks.html file.
+•	Added Export Selected as Bookmarks HTML — exports the currently selected URLs.
+•	Added Export Group as Bookmarks HTML — exports all URLs in a group.
+
+From 1.3.0 - Status Bar:
+•	Added URL usage tracking columns. Open Count, displays how many times each URL has been opened. Last Opened, displays the timestamp of when the URL was last opened.
+•	Added status bar with counts of URLs total, visible, selected, valid, invalid, groups, tags, opened and current filter summary.
+•	Search bar now filters the visible URL list, first visible match is selected automatically.
+
+From 1.2.9 - Add to Startup:
+•	Added "Start with Windows" checkbox to the Options dialog, using a Startup folder shortcut for safer Windows auto-start behavior.
+•	Added "Quick Add URL" in the tray and main menu with manual enter URL dialog.
+•	Added "Open Database" in the main menu, allows to switch URLs store location.
+•	Added "Save Database As" in the main menu, allows to save database to custom name and location.
+
+From 1.2.8 - Editing UX Improvements:
+•	Replaced modal title editing with in-place editing in the Title column.
+•	Replaced modal URL editing with in-place editing in the URL column, while preserving duplicate checks, cache updates, and persistence.
+•	Enabled inline group rename directly on group headers instead of using a dialog.
+•	Fixed theme glitches in scrollbars and dialog boxes.
+•	Renamed Captured column to Created.
+
 From 1.2.7 - Import Export:
 •	Added CSV export with selectable columns. Selection stored in the INI.
 •	Added JSON Export and Import in the File Menu.
@@ -111,4 +135,3 @@ From 1.1.1 - Core Functionality:
 •	Favicon fetching — downloads 16×16 favicons via Google favicon service and displays them in the list.
 •	SQLite persistence — all data are stored in a local Db file.
 •	Settings preferences saved in a INI file.
-
